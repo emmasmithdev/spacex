@@ -1,8 +1,11 @@
 import React from "react";
 
-const LaunchSelector = () => {
+const LaunchSelector = ({onSelectedLaunchIncrement, onSelectedLaunchDecrement}) => {
     return (
-        <p>Launch selector goes in here.</p>
+        <>
+            <button onClick={onSelectedLaunchDecrement}>Previous Launch</button>
+            <button onClick={onSelectedLaunchIncrement}>Next Launch</button>
+        </>
     )
 }
 
